@@ -45,7 +45,7 @@ const AddWorker = ({ setWorkers }) => {
         // setEnteredName("")
         // setEnteredSalary("")
         nameInputRef.current.value = ""
-        salaryInputRef.current.value =  ""
+        salaryInputRef.current.value = ""
     }
 
     const errorHandler = () => {

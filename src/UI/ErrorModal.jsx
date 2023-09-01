@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Button from "./Button"
 import Card from "./Card"
 import ReactDOM from 'react-dom'
@@ -26,6 +27,15 @@ const ModalOverlay = ({ error, onConfirm }) => {
 }
 
 const ErrorModal = ({ error, onConfirm }) => {
+
+    useEffect(() => {
+        console.log("modal oluşturuldu.")
+
+        return () => {
+            console.log("modal kaldırıldı.")
+        }
+    },[])
+
     return (
         <>
             {ReactDOM.createPortal(<Backdrop onConfirm={onConfirm} />, document.getElementById('backdrop-root'))}

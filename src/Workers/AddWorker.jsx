@@ -50,7 +50,7 @@ const AddWorker = ({ setWorkers }) => {
     }
 
     return (
-        <div>
+        <>
             {error && <ErrorModal onConfirm={errorHandler} error={error} />}
             <Card className="mt-10">
                 <form className="flex flex-col gap-y-2" onSubmit={addWorkerHandler}>
@@ -87,7 +87,7 @@ const AddWorker = ({ setWorkers }) => {
                     </Button>
                 </form>
             </Card>
-        </div>
+        </>
 
 
     )
